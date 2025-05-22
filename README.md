@@ -7,29 +7,25 @@ This repository contains the data preprocessing and visualization steps used in 
 
 ---
 
-## 📁 Project Structure
+# Preprocessing Steps
 
+## Goal
+To explore consumer profiles and prepare clean, structured data for predicting purchasing behavior and crafting marketing strategies.
 
+## Tools
+- pandas
+- seaborn
+- matplotlib
+- scikit-learn
 
----
-
-## Dataset Overview
-
-- **Source**: [Online Shoppers Purchasing Intention Dataset]
-(https://www.kaggle.com/datasets/imakash3011/online-shoppers-purchasing-intention-dataset)
-- **Records**: 12,330 user sessions
-- **Target Variable**: `Revenue` (True/False, indicating whether a purchase was made)
-
----
-
-## Preprocessing Steps
-
-The preprocessing was performed in [`preprocessing.ipynb`](notebooks/preprocessing.ipynb) and included:
-
-
+## Key Tasks
+- Missing & outlier handling
+- Income binning and comparison
+- Visualization of consumer attributes vs campaign response
+- Exporting cleaned data for modeling
 
 ---
 
-## How to Run
+
 
 
