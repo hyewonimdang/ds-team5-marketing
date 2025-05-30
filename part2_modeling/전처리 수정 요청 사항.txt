@@ -1,0 +1,32 @@
+전처리 수정 요청 사항
+
+1. 스케일링 문제
+모든 수치형 feature 스케일링X -> 필요 feature만 선택
+문제점)
+Response : 1/0이 아닌 3.114309672/-0.321098447로 구분되어 있음 
+Mnt_* : 구매금액 예측 시 원본 데이터 필요(스케일링 데이터로는 금액 예측 불가) 
+AcceptedCmp* : response와 마찬가지 스케일링x
+-> Response, Mnt_* 스케일링 필요시 별도 컬럼으로 보관
+
+구매 예측, 구매 금액 예측에는 스케일링 된 Mnt_feature, Z_CostContact, Z_Revenue 불필요 : 제거해도 상관 없음
+
+2. 전처리 과정에서 데이터 손실이 너무 큼
+데이터가 50%넘게 줄어듬
+-> 결측치 및 outlier를 단순 제거가 아닌 imputation 필요
+
+3. 생성 feature와 각 그래프 도출의 목표 주석 달기
+새로운 featur 생성한 이유와 각 그래프에서 도출하고자 하는 정보를 파악하기 힘듦
+
+4. 그래프 결과 확인
+Income/Age/Recency와  Response
+웹 페이지 방문 수와 수입
+그래프들의 결과가 이상함
+Income-Response : 수입이 더 적은데 구매 반응이 더 활발
+Age-Response : 더 어린 나이대에서 구매 반응
+Recency-Response : 최근에 방문하지 않은 고객들이 구매 반응
+
+둘의 결과가 이상해서 Income의 결측치만 삭제하고 그래프 그려보니 전부 반대로 나옴
+-> 전처리 과정에서 문제 발생
+
+5. 각 광고들의 반응과 구매 반응의 관계
+AcceptedCmp1~5와 response의 상관관계를 그래프로 그려서 revenue를 예측할 때 필요한 feature인지 확인 필요
