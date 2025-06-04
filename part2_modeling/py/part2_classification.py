@@ -36,7 +36,7 @@ print(coef_df[['Feature', 'Coefficient']])
 # 독립변수, 종속변수 설정
 # 앞서 확인한 feature들의 Coefficient를 기준으로 선정
 X = df[["Age_scaled", "Recency_scaled", "membership_Years_scaled", "Income_scaled", 
-        "NumWebVisitsMonth_scaled", "Kidhome", "Teenhome", "Complain", "Total_Mnt_scaled",
+        "NumWebVisitsMonth_scaled", "Kidhome_scaled", "Teenhome_scaled", "Complain", "Total_Mnt_scaled",
          "Education_Basic", "Education_Graduation", "Education_Master", "Education_PhD",
          "Marital_Status_Alone", "Marital_Status_Divorced", "Marital_Status_Widow", "Marital_Status_YOLO",
          "Marital_Status_Married", "Marital_Status_Single", "Marital_Status_Together",

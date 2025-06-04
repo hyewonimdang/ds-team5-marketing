@@ -30,7 +30,7 @@ print(coef_df[['Feature', 'Coefficient']])
 # 독립변수, 종속변수 설정
 X = df[["Age_scaled", "Recency_scaled", "membership_Years_scaled",
         "Income_eq_freq_High", "Income_eq_width_High", "Income_eq_width_Medium", "Income_eq_freq_Medium", 
-        "NumWebVisitsMonth_scaled", "Kidhome", "Teenhome", "Total_Purchases_scaled", 
+        "NumWebVisitsMonth_scaled", "Kidhome_scaled", "Teenhome_scaled", "Total_Purchases_scaled", 
         "Education_Basic", "Education_Graduation", "Education_Master", "Education_PhD",
         "Marital_Status_Divorced", "Marital_Status_Widow", "Marital_Status_YOLO",
         "Marital_Status_Single", "Marital_Status_Together",
