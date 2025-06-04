@@ -35,7 +35,7 @@ coef_df = coef_df.sort_values(by='abs_coef', ascending=False)
 print(coef_df[['Feature', 'Coefficient']])
 
 X = df[["Age_scaled", "Recency_scaled", "membership_Years_scaled", "Income_scaled", 
-        "NumWebVisitsMonth_scaled", "Kidhome", "Teenhome", "Complain", "Total_Mnt_scaled",
+        "NumWebVisitsMonth_scaled", "Kidhome_scaled", "Teenhome_scaled", "Complain", "Total_Mnt_scaled",
          "Education_Basic", "Education_Graduation", "Education_Master", "Education_PhD",
          "Marital_Status_Alone", "Marital_Status_Divorced", "Marital_Status_Widow", "Marital_Status_YOLO",
          "Marital_Status_Married", "Marital_Status_Single", "Marital_Status_Together",
